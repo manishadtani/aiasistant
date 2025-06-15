@@ -1,7 +1,5 @@
 import mongoose from "mongoose";
 
-
-
 const userSchema = new mongoose.Schema({
 
     name:{
@@ -26,12 +24,7 @@ const userSchema = new mongoose.Schema({
     history:[
         {type:String}
     ]
-
-
-
 },{timestamps:true})
-
-
 
 const userModel = mongoose.model("User", userSchema)
 
