@@ -50,6 +50,9 @@ const Signin = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
+        {err.length > 0 && <p className='text-red-500'>
+                        *{err}
+                    </p>}
         <h2 className="text-4xl font-extrabold text-white text-center mb-8 tracking-tight">Login to Zen AI</h2>
         <form className="space-y-7" onSubmit={handleSubmit}>
           <div>
